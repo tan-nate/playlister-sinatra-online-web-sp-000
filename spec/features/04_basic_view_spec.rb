@@ -12,7 +12,7 @@ describe "Playlister Basics" do
 
     @song.song_genres.create(genre: @genre)
     @song.artist = @artist
-  
+
     @song.save
   end
 
@@ -99,7 +99,7 @@ describe "Playlister Basics" do
       end
     end
 
-    describe "/artists/:slug" do 
+    describe "/artists/:slug" do
       before do
         visit "/artists/#{@artist.slug}"
       end
