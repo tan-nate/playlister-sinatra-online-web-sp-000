@@ -12,6 +12,6 @@ class Artist < ActiveRecord::Base
     end
   end
 
-  include Slugable::InstanceMethods
-  extend Slugable::ClassMethods
+  # include Slugable::InstanceMethods
+  # extend Slugable::ClassMethods
 end
