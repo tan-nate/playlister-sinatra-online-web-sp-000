@@ -23,6 +23,7 @@ class LibraryParser
   def call
     files.each do |filename|
       parts = parse_filename(filename)
+      build_objects(*parts)
     end
   end
 
