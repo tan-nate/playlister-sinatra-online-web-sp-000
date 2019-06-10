@@ -12,6 +12,8 @@ end
 
 use Rack::MethodOverride
 
+LibraryParser.parse
+
 use GenresController
 use ArtistsController
 use SongsController

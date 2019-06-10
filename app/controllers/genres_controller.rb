@@ -6,8 +6,8 @@ class GenresController < ApplicationController
 
   get '/genres/:slug' do
     @genre = Genre.all.find_by_slug(params[:slug])
-    @songs = Song.all
-    @artists = Artist.all
+    @songs = @genre.songs
+    @artists = @genre.artists
     erb :'genres/show'
   end
 end
