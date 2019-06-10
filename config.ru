@@ -12,6 +12,11 @@ end
 
 use Rack::MethodOverride
 
+songs = LibraryParser.parse
+parsed_songs = songs.collect do |song|
+  song.parse_filename
+end
+
 use GenresController
 use ArtistsController
 use SongsController
