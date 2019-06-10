@@ -4,9 +4,7 @@ class SongsController < ApplicationController
   end
 
   get '/songs/new' do
-    binding.pry
     @genres = Genre.all
-    binding.pry
     erb :'/songs/new'
   end
 
